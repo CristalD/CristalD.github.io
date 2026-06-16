@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cristal Campino | Ingeniero TI · Analista QA Senior · Business Intelligence" />
+  <meta property="og:title" content="Cristal Campino Dev" />
+  <meta property="og:description" content="Ingeniero TI · Analista QA Senior · Business Intelligence" />
+  <meta property="og:type" content="website" />
+  <title>Cristal Campino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav__logo">
+      <span class="logo-bracket">&lt;</span>Cristal<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">Sobre mí</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#education">Educación</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="hero__greeting">¡Hola! Soy</p>
+      <h1 class="hero__name">Cristal Campino</h1>
+      <div class="hero__roles">
+        <span class="role-tag">Ingeniero TI</span>
+        <span class="role-sep">·</span>
+        <span class="role-tag">Analista QA Senior</span>
+        <span class="role-sep">·</span>
+        <span class="role-tag">BI Developer</span>
+      </div>
+      <p class="hero__location">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Gran Santiago, Chile
+      </p>
+      <p class="hero__bio">
+        Profesional TI con más de 10 años de experiencia en <strong>Testing & QA</strong>,
+        <strong>Business Intelligence</strong> y gestión de incidentes. Líder en comunidad FemIT,
+        impulsando el rol de la mujer en tecnología.
+      </p>
+      <div class="hero__actions">
+        <a href="mailto:dqacristal@gmail.com" class="btn btn--primary">Contáctame</a>
+        <a href="https://www.linkedin.com/in/cristal-angelica-campino-saavedra-99b86b112" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn</a>
+      </div>
+      <div class="hero__socials">
+        <a href="mailto:dqacristal@gmail.com" aria-label="Email" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/cristal-angelica-campino-saavedra-99b86b112" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="tel:+56950839340" aria-label="Teléfono" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__terminal" aria-hidden="true">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="terminal__title">cristal@portfolio ~ </span>
+        </div>
+        <div class="terminal__body" id="terminalBody"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__inner">
+      <h2 class="section__title"><span class="accent">#</span> Sobre mí</h2>
+      <div class="about__grid">
+        <div class="about__avatar">
+          <div class="avatar-ring">
+            <div class="avatar-initials">CC</div>
+          </div>
+          <div class="femit-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+            FemIT Leader
+          </div>
+        </div>
+        <div class="about__text">
+          <p>Soy una profesional TI con más de <strong>10 años de experiencia</strong> enfocada en asegurar la calidad del software, análisis de datos y liderazgo técnico.</p>
+          <p>Trabajo bajo metodologías ágiles como <strong>Scrum, DevOps, TDD y BDD</strong>, con experiencia en proyectos de alta complejidad en sectores como finanzas, aduanas y medio ambiente.</p>
+          <p>Soy líder en la comunidad <strong>FemIT</strong>, donde me dedico a concientizar sobre el rol de la mujer en la industria tecnológica y a motivar a nuevas generaciones de profesionales.</p>
+          <div class="about__certs">
+            <h3>Certificaciones</h3>
+            <ul class="cert-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                Análisis y Desarrollo de Modelos de Datos
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                Programación de Software
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                Inteligencia de Negocios
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                Inglés Intermedio (Internacional)
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                Gestión de Proyectos Informáticos
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="section__inner">
+      <h2 class="section__title"><span class="accent">#</span> Skills</h2>
+      <p class="section__subtitle">Experta en aseguramiento de calidad, datos e infraestructura moderna.</p>
+
+      <div class="skills__terminal" aria-label="Lista de habilidades en formato terminal">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="terminal__title">cristal@skills ~ </span>
+          </div>
+          <div class="terminal__body terminal__body--static">
+            <p><span class="t-prompt">$</span> <span class="t-cmd">ls testing</span></p>
+            <p class="t-output">Selenium, Jira, TestLink, Redmine, OWASP, TDD, BDD, ISTQB</p>
+            <p><span class="t-prompt">$</span> <span class="t-cmd">ls programming</span></p>
+            <p class="t-output">Python, JavaScript, C#, Java, HTML, CSS, .NET</p>
+            <p><span class="t-prompt">$</span> <span class="t-cmd">ls data</span></p>
+            <p class="t-output">Power BI, ETL, PL-SQL, T-SQL, MySQL, Control-M</p>
+            <p><span class="t-prompt">$</span> <span class="t-cmd">ls methodologies</span></p>
+            <p class="t-output">Scrum, DevOps, Agile, Waterfall</p>
+            <p><span class="t-prompt">$</span> <span class="t-cmd">ls tools</span></p>
+            <p class="t-output">VS Code, Git, GitHub, Eclipse, Postman, Office 365</p>
+            <p class="t-cursor">█</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill-card">
+          <div class="skill-card__icon qa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3>Quality Assurance</h3>
+          <div class="tag-group">
+            <span class="tag">Selenium</span><span class="tag">TestLink</span><span class="tag">Jira</span><span class="tag">Redmine</span><span class="tag">OWASP</span><span class="tag">TDD</span><span class="tag">BDD</span><span class="tag">ISTQB</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon bi">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3>Business Intelligence</h3>
+          <div class="tag-group">
+            <span class="tag">Power BI</span><span class="tag">ETL</span><span class="tag">PL-SQL</span><span class="tag">T-SQL</span><span class="tag">MySQL</span><span class="tag">Control-M</span><span class="tag">.NET</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon dev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <h3>Desarrollo</h3>
+          <div class="tag-group">
+            <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">C#</span><span class="tag">Java</span><span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon ops">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+          </div>
+          <h3>Metodologías</h3>
+          <div class="tag-group">
+            <span class="tag">Scrum</span><span class="tag">DevOps</span><span class="tag">Agile</span><span class="tag">Waterfall</span><span class="tag">Git</span><span class="tag">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section__inner">
+      <h2 class="section__title"><span class="accent">#</span> Experiencia</h2>
+
+      <div class="timeline">
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Analista de Soporte TI</h3>
+                <p class="timeline__company">S3Chile · Banchile Seguros</p>
+              </div>
+              <span class="timeline__date">Sept 2025 – Presente</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Soporte y gestión de incidentes en sistemas de Banchile Seguros.</li>
+              <li>Análisis y mantención de procesos coordinando con áreas técnicas y de negocio.</li>
+              <li>Creación y mantención de productos/planes de seguros en entorno productivo.</li>
+              <li>Liderazgo de equipo QA para entorno de pruebas.</li>
+              <li>Manejo de ETL, PL-SQL y T-SQL.</li>
+            </ul>
+            <div class="tag-group tag-group--sm">
+              <span class="tag">ETL</span><span class="tag">PL-SQL</span><span class="tag">T-SQL</span><span class="tag">QA Lead</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Analista de TI</h3>
+                <p class="timeline__company">S3Chile · Banchile Seguros</p>
+              </div>
+              <span class="timeline__date">Abr 2022 – Presente</span>
+            </div>
+            <ul class="timeline__list">
+              <li>QA para desarrollos nuevos y correcciones de incidentes.</li>
+              <li>Control y certificación de procesos con Control-M.</li>
+              <li>Business Intelligence: reportes estratégicos y dashboards dinámicos en Power BI.</li>
+              <li>Detección y análisis diario de incidentes en plataformas de la corredora.</li>
+            </ul>
+            <div class="tag-group tag-group--sm">
+              <span class="tag">Power BI</span><span class="tag">Control-M</span><span class="tag">QA</span><span class="tag">ETL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Capacitador de Automatización & Analista QA</h3>
+                <p class="timeline__company">QualityFactory · Ecomsur</p>
+              </div>
+              <span class="timeline__date">May 2021 – Ene 2022</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Capacitación de profesionales en testing y automatización de pruebas.</li>
+              <li>Proyectos de sistemas WMS, OMS y marketplaces de Ecomsur.</li>
+            </ul>
+            <div class="tag-group tag-group--sm">
+              <span class="tag">Automatización</span><span class="tag">WMS</span><span class="tag">OMS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Docente Taller de Robótica</h3>
+                <p class="timeline__company">Duoc UC · Fundación</p>
+              </div>
+              <span class="timeline__date">Oct 2021 – Dic 2021</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Profesora de taller de robótica para estudiantes del Liceo Politécnico Andes.</li>
+            </ul>
+            <div class="tag-group tag-group--sm">
+              <span class="tag">Docencia</span><span class="tag">Robótica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Analista QA</h3>
+                <p class="timeline__company">Quality Factory · Aguas Andinas / Suez</p>
+              </div>
+              <span class="timeline__date">Oct 2019 – Mar 2020</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Aseguramiento de Desarrollo Seguro de Software con OWASP Top 10.</li>
+              <li>Detección automatizada de vulnerabilidades en código.</li>
+              <li>Creación de planes de prueba e informes de hallazgos.</li>
+            </ul>
+            <div class="tag-group tag-group--sm">
+              <span class="tag">OWASP</span><span class="tag">Seguridad</span><span class="tag">Automatización</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Analista QA</h3>
+                <p class="timeline__company">Servicio de Impuestos Internos (SII)</p>
+              </div>
+              <span class="timeline__date">Oct 2015 – Ene 2016</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Proyecto "Solicitud Devolución Cambio Sujeto".</li>
+              <li>Creación y ejecución de pautas de pruebas, informes de evidencia e incidencias.</li>
+              <li>Control de mantenciones con Jira.</li>
+            </ul>
+            <div class="tag-group tag-group--sm">
+              <span class="tag">Jira</span><span class="tag">Funcional</span><span class="tag">Reporting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Testing & Analista QA</h3>
+                <p class="timeline__company">Servicio Nacional de Aduanas</p>
+              </div>
+              <span class="timeline__date">Dic 2014 – Ago 2015</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Testing funcional en sistemas DECARE y SIDEMAR.</li>
+              <li>Creación de planes, casos de prueba e informes de testing.</li>
+              <li>Gestión del workflow de seguimiento de bugs.</li>
+            </ul>
+            <div class="tag-group tag-group--sm">
+              <span class="tag">Funcional</span><span class="tag">Bug Tracking</span><span class="tag">Documentación</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section--alt" id="education">
+    <div class="section__inner">
+      <h2 class="section__title"><span class="accent">#</span> Educación</h2>
+      <div class="edu__grid">
+        <div class="edu__card">
+          <div class="edu__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
+          </div>
+          <div class="edu__content">
+            <h3>Ingeniería Informática</h3>
+            <p class="edu__school">Duoc UC</p>
+            <span class="edu__date">2018 – 2021</span>
+          </div>
+        </div>
+        <div class="edu__card">
+          <div class="edu__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
+          </div>
+          <div class="edu__content">
+            <h3>Analista Programador Computacional</h3>
+            <p class="edu__school">Duoc UC</p>
+            <span class="edu__date">2018 – 2020</span>
+          </div>
+        </div>
+        <div class="edu__card">
+          <div class="edu__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
+          </div>
+          <div class="edu__content">
+            <h3>Técnico en Telecomunicaciones — Redes y Programación</h3>
+            <p class="edu__school">Duoc UC</p>
+            <span class="edu__date">2011 – 2014</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="award">
+        <div class="award__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
+        <div>
+          <h3>Reconocimiento FemIT</h3>
+          <p>Premio de la comunidad FemIT dentro del programa <strong>"Más Mujeres en las TICs"</strong> — líder en concientización sobre el rol de la mujer en la industria tecnológica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section__inner section__inner--center">
+      <h2 class="section__title"><span class="accent">#</span> Contacto</h2>
+      <p class="section__subtitle">¿Tienes un proyecto en mente o quieres conectar? ¡Escríbeme!</p>
+      <div class="contact__cards">
+        <a href="mailto:dqacristal@gmail.com" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>dqacristal@gmail.com</span>
+        </a>
+        <a href="tel:+56950839340" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>+56 9 5083 9340</span>
+        </a>
+        <a href="https://www.linkedin.com/in/cristal-angelica-campino-saavedra-99b86b112" target="_blank" rel="noopener" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Hecho con <span class="heart">♥</span> por Cristal Campino · Santiago, Chile · 2026</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
