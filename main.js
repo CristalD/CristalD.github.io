@@ -105,3 +105,49 @@ const navObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.4 });
 
 sections.forEach(s => navObserver.observe(s));
+
+// CERTIFICATE MODAL
+const certModal        = document.getElementById('certModal');
+const certModalImg     = document.getElementById('certModalImg');
+const certModalTitle   = document.getElementById('certModalTitle');
+const certModalClose   = document.getElementById('certModalClose');
+const certModalBackdrop = document.getElementById('certModalBackdrop');
+const eduCards         = document.querySelectorAll('.edu__card');
+
+let lastFocusedCard = null;
+
+function openCertModal(src, title) {
+  certModalImg.src = src;
+  certModalImg.alt = `Certificado: ${title}`;
+  certModalTitle.textContent = title;
+  certModal.classList.add('is-open');
+  certModal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  certModalClose.focus();
+}
+
+function closeCertModal() {
+  certModal.classList.remove('is-open');
+  certModal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  certModalImg.src = '';
+  if (lastFocusedCard) lastFocusedCard.focus();
+}
+
+eduCards.forEach(card => {
+  card.addEventListener('click', () => {
+    lastFocusedCard = card;
+    const src = card.getAttribute('data-cert');
+    const title = card.getAttribute('data-title');
+    openCertModal(src, title);
+  });
+});
+
+if (certModalClose) certModalClose.addEventListener('click', closeCertModal);
+if (certModalBackdrop) certModalBackdrop.addEventListener('click', closeCertModal);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && certModal.classList.contains('is-open')) {
+    closeCertModal();
+  }
+});
