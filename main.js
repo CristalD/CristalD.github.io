@@ -279,6 +279,11 @@ function closeMediaModal() {
   if (lastFocusedMediaCard) lastFocusedMediaCard.focus();
 }
 
+// Detecta si es dispositivo móvil
+function isMobile() {
+  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 768;
+}
+
 document.querySelectorAll('.carousel__card[data-media-type]').forEach(card => {
   card.addEventListener('click', () => {
     const type  = card.getAttribute('data-media-type');
@@ -286,11 +291,14 @@ document.querySelectorAll('.carousel__card[data-media-type]').forEach(card => {
     const title = card.getAttribute('data-title');
 
     if (type === 'link') {
-      // Repositorio de GitHub: abre en pestaña nueva, sin modal
       window.open(src, '_blank', 'noopener');
       return;
     }
-    // type === 'video', 'doc' o 'instagram': abre modal
+    // En móvil, Instagram no renderiza el embed — abre directo en Instagram
+    if (type === 'instagram' && isMobile()) {
+      window.open(src, '_blank', 'noopener');
+      return;
+    }
     lastFocusedMediaCard = card;
     openMediaModal(src, title, type);
   });
