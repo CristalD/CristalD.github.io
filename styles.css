@@ -1,6 +1,6 @@
 /* ============================================
    CRISTAL CAMPINO PORTFOLIO — styles.css
-   Dark terminal aesthetic, inspired by itssofi.dev
+   Dark terminal aesthetic
    ============================================ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -874,6 +874,30 @@ body {
   aspect-ratio: 16/9;
   border: none;
   display: block;
+}
+
+@media (max-width: 640px) {
+  .cert-modal__dialog--media {
+    max-height: 95vh;
+    margin: 0;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .cert-modal__body--media {
+    padding: 0;
+  }
+  .cert-modal__body--media iframe {
+    aspect-ratio: 16/9;
+    max-height: 55vh;
+  }
+  .cert-modal {
+    align-items: flex-end;
+    padding: 0;
+  }
 }
 .instagram-embed-container {
   display: none;
